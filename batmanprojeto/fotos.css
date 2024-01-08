@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    background-color: black;
+    text-decoration: none;
+}
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+nav {
+    width: 60%;
+}
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+li:hover {
+    color: #d21617;
+}
+#logo {
+    width: 150px;
+    height: auto;
+}
+#banner{
+    background-image: url('https://fictionhorizon.com/wp-content/uploads/2021/04/F5916505-7573-45DB-8552-DC800676651B.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 730px;
+}
+.movie-fotos-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.Fotos-content{
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    row-gap: 20px;
+    column-gap: 40px;
+}
+.foto{
+    width: 100%;
+    height: 600px;
+    background-size: cover;
+    background-position: 50% 50%;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 20px 10px;
+    color: #fff;
+    font-size: 17px;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+.foto:hover{
+    transform: scale(1.02);
+}
+.banner-1{
+    background-image: url('https://th.bing.com/th/id/OIP.MuYO720Kcdq3ABYgoIZcjQHaEK?rs=1&pid=ImgDetMain');
+}
+.banner-2{
+    background-image: url('https://th.bing.com/th/id/R.c3824cf465787ac552233ebca13e47c7?rik=deTDLA5x%2b7XALg&pid=ImgRaw&r=0');
+}
+.banner-3{
+    background-image: url('https://wallpapercave.com/wp/wp10800077.jpg');
+}
+.banner-4{
+    background-image: url('https://th.bing.com/th/id/OIP._lkD0XEgdfn6qkohzyNj_AHaFX?rs=1&pid=ImgDetMain');
+}
+.banner-5{
+    background-image: url('https://images.hdqwalls.com/download/colin-farrel-as-the-penguin-in-the-batman-movie-2022-6s-1280x720.jpg');
+}
+.banner-6{
+    background-image: url('https://th.bing.com/th/id/OIP.WapU7F2BDHrGhun1KY8k_gHaD4?rs=1&pid=ImgDetMain');
+}
+footer{
+    height:300px ;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+span{
+    color: #fff;
+    font-family:'Kdam Thmor Pro', sans-serif;
+}
+.footer-navigation{
+    display: none;
+}
+.footer-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media(max-width:768px){
+    .footer-navigation{
+        display: block;
+    }
+    nav {
+        display: none;
+    }
+    #banner{
+        background-position:35%;
+    }
+    #trailer-container{
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+    }
+    .content{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+    .trailer{
+        width: 100%;
+    }
+    #sinopse{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .description{
+        width: 100%;
+    }
+    .button{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .cards-content{
+        grid-template-columns: 1fr;
+        margin-top: 150px;
+    }
+}
